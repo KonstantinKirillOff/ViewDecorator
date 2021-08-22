@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         mainView.layer.cornerRadius = 10
+        collectColor(for: mainView)
     }
 
     @IBAction func redSliderChanged() {
