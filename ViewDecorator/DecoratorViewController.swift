@@ -36,9 +36,9 @@ class DecoratorViewController: UIViewController {
         blueColorValueTF.delegate = self
         
         guard let mainCVColor = mainCVColor else { return }
-        redSlider.setValue(Float(CIColor(color: mainCVColor).red), animated: false)
-        greenSlider.setValue(Float(CIColor(color: mainCVColor).green), animated: false)
-        blueSlider.setValue(Float(CIColor(color: mainCVColor).blue), animated: false)
+        redSlider.value =  Float(CIColor(color: mainCVColor).red)
+        greenSlider.value = Float(CIColor(color: mainCVColor).green)
+        blueSlider.value = Float(CIColor(color: mainCVColor).blue)
 
         setParemeters(for: redValueLabel, greenValueLabel, blueValueLabel)
         collectColor()
@@ -106,13 +106,13 @@ extension DecoratorViewController: UITextFieldDelegate {
         guard let numberValue = Float(newValue) else { return }
         
         if textField == redColorValueTF {
-            redSlider.setValue(numberValue, animated: false)
+            redSlider.setValue(numberValue, animated: true)
             setParemeters(for: redValueLabel)
         } else if textField == greenColorValueTF {
-            greenSlider.setValue(numberValue, animated: false)
+            greenSlider.setValue(numberValue, animated: true)
             setParemeters(for: greenValueLabel)
         } else {
-            blueSlider.setValue(numberValue, animated: false)
+            blueSlider.setValue(numberValue, animated: true)
             setParemeters(for: blueValueLabel)
         }
         
