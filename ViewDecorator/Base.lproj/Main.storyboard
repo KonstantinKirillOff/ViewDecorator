@@ -120,7 +120,7 @@
                                                 <rect key="frame" x="-2" y="0.0" width="155" height="35"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                                 <connections>
-                                                    <action selector="sliderValueChanged" destination="BYZ-38-t0r" eventType="valueChanged" id="jsL-BS-zMv"/>
+                                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="hAV-VN-Xig"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" value="0.27000000000000002" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ofm-iU-cXX">

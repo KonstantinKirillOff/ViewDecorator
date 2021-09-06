@@ -87,7 +87,7 @@ extension DecoratorViewController {
             case redValueLabel:
                 redValueLabel.text = string(from: redSlider)
                 redColorValueTF.text = string(from: redSlider)
-            case redValueLabel:
+            case greenValueLabel:
                 greenValueLabel.text = string(from: greenSlider)
                 greenColorValueTF.text = string(from: greenSlider)
             default:
