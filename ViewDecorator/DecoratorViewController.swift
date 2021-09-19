@@ -62,7 +62,7 @@ class DecoratorViewController: UIViewController {
     }
     
     @IBAction func doneDuttonPressed() {
-        delegate.setNewColor(color: mainView.backgroundColor ?? mainCVColor)
+        delegate.setNewColor(mainView.backgroundColor ?? mainCVColor)
         dismiss(animated: true)
     }
     
