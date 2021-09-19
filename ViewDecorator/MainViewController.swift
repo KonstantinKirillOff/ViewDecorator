@@ -16,6 +16,7 @@ class MainViewController: UIViewController {
         guard let decorateVC = segue.destination as? DecoratorViewController else { return }
         decorateVC.mainCVColor = view.backgroundColor
         decorateVC.delegate = self
+        //com
     
     }
 }
